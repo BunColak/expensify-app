@@ -13,10 +13,6 @@ import moment from 'moment';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 200, note: 'fuck this', created_at: moment() }));
-store.dispatch(addExpense({ description: 'Gas Bill', amount: 100, note: 'fuck this', created_at: moment() }));
-store.dispatch(addExpense({ description: 'Rent', amount: 195, note: 'fuck this', created_at: moment() }));
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />
